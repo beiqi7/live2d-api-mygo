@@ -4,9 +4,9 @@
 
 该仓库中所有Live2D相关资源均来自于网络，**仅供学习交流，请勿用于商业用途，如有侵权，请联系删除**。
 
-[**点击查看示例网页**](https://live2d-widget-mygo.vercel.app/)。示例网页中模型位于左下角。
+[**点击查看示例网页**](https://fieryrage.netlify.app/)。示例网页中模型位于左下角。
 
-备用链接：[**点击查看示例网页**](https://live2d-widget-mygo.panxuc.com/)
+备用链接：[**点击查看示例网页**](https://lo.loli.za.org/)
 
 ## 介绍
 
@@ -50,7 +50,7 @@
 默认情况下，只在浏览器宽度大于768px时显示模型，以防止模型对手机端网页阅读造成不便；模型默认显示在左下角。你也可以通过URL传递参数修改这个配置：
 
 ```html
-<script src="https://live2d-widget-mygo.vercel.app/autoload.js?width_limit=0&position=right&preload=ALL"></script>
+<script src="https://fieryrage.netlify.app/autoload.js?width_limit=0&position=right&preload=ALL"></script>
 ```
 
 - `width_limit`：宽度限制，单位为像素，当浏览器宽度大于此值时显示模型，默认为768。
