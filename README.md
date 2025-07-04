@@ -34,12 +34,12 @@
 只需在html页面的`head`或`body`中添加一行代码即可：
 
 ```html
-<script src="https://live2d-widget-mygo.vercel.app/autoload.js"></script>
+<script src="https://fieryrage.netlify.app/autoload.js"></script>
 ```
 
-如果你在使用过程中遇到问题，可以尝试使用
+如果你在使用过程中遇到问题，可以尝试使用（EdgeOne Pages）
 ```html
-<script src="https://live2d-widget-mygo.panxuc.com/autoload.js"></script>
+<script src="https://lo.loli.za.org/autoload.js"></script>
 ```
 来替换上面的链接。该链接是本项目的备用链接，可能会更稳定。
 
