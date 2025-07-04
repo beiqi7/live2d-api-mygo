@@ -1,0 +1,23 @@
+# netlify.toml
+
+# 为所有托管的模型文件添加 CORS 跨域许可
+[[headers]]
+  # "for" 字段指定了要应用这些规则的路径模式。
+  # "/model/*" 会匹配所有在 "model" 目录下的文件，例如:
+  # /model/miku_v3/index.json
+  # /model/miku_v3/miku.moc3
+  # /model/miku_v3/textures/texture_00.png
+  for = "/model/*"
+  [headers.values]
+    # 允许来自任何域名的跨域请求。
+    # 对于一个公开的、可嵌入的小组件来说，这是最常见的配置。
+    Access-Control-Allow-Origin = "*"
+
+# （可选，但推荐）为其他可能被跨域加载的静态资源也添加许可
+[[headers]]
+  # 比如您的 waifu.css, live2d.min.js 等
+  for = "/*" 
+  [headers.values]
+    # 如果您在 vite.config.js 中没有设置 output.assetFileNames 为 'assets/[name].[ext]'
+    # 那么您的资源可能在根目录，用 "/*" 更保险
+    Access-Control-Allow-Origin = "*"
